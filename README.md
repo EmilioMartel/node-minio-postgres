@@ -90,4 +90,4 @@ kubectl expose deployment curso --port=80 --target-port=3000
 Acceder al servicio
 ```bash
 kubectl port-forward svc/curso 3002:80
-```
+```# node-minio-postgres
