@@ -5,7 +5,7 @@ const upload = multer({ dest: "ficheros_subidos/" });
 const pg = require("pg");
 const pool = new pg.Pool({
   user: "postgres",
-  host: "localhost",
+  host: "172.19.9.128",
   database: "postgres",
   password: "postgres",
   port: 5436,
@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 const bucket = "curso";
 const minioClient = new MinioClient({
-  endPoint: "localhost",
+  endPoint: "172.19.9.128",
   port: 9002,
   accessKey: "minioadmin",
   secretKey: "minioadmin",
